@@ -1,0 +1,127 @@
+{{!--
+Це код container файлу для summary сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/summary"
+--}}
+
+<div>
+
+	<div>
+		<h1>Program</h1>
+	</div>
+
+	<div>
+		<h2>Excursion:</h2>
+	</div>
+
+	{{#with program.excursion}}
+	<ul>
+		<li>{{name}}</li>
+
+		{{#with location}}
+		<li>Location: {{city}}, {{country}}</li>
+		{{/with}}
+
+		<li>Date: {{date}}</li>
+
+		<hr />
+
+		<b>Program:</b>
+		{{#each program}}
+		<br>
+
+		<ul>
+			<li>Name: {{name}}</li>
+			<li>Type: {{type}}</li>
+			<li>Duration: {{duration}}</li>
+
+			{{#with details}}
+			<li>Details:
+				<ul>
+
+					{{#with museum}}
+					<li>Museum:
+						<ul>
+							<li>{{name}}</li>
+
+							{{#with location}}
+							<li>Location:
+								{{address}},
+								{{city}},
+								{{country}}</li>
+							{{/with}}
+
+							{{#each exhibits}}
+							<li>Exhibits:
+								<ul>
+									<li>Name: {{name}}</li>
+
+									{{#if artist}}
+									<li>Artist: {{artist}}</li>
+									{{/if}}
+
+									<li>Description:
+										{{description}}</li>
+									<li>Audio guide:
+										{{audio_guide}}</li>
+								</ul>
+							</li>
+							{{/each}}
+
+						</ul>
+					</li>
+					{{/with}}
+
+					{{#with guide}}
+					<li>Guide:
+						<ul>
+							<li>Name: {{name}}</li>
+							<li>Language: {{language}}</li>
+							<li>Rating: {{rating}}</li>
+						</ul>
+					</li>
+					{{/with}}
+
+					{{#with venue}}
+					<li>Venue:
+						<ul>
+							<li>Name:
+								{{name}}
+
+								{{#with location}}
+							<li>Location:
+								{{address}},
+								{{city}},
+								{{country}}
+							</li>
+							{{/with}}
+
+					</li>
+				</ul>
+			</li>
+			{{/with}}
+
+			{{#each performers}}
+			<li>Performers:
+				<ul>
+					<li>Name: {{name}}</li>
+					<li>Type: {{type}}</li>
+				</ul>
+			</li>
+			{{/each}}
+		</ul>
+		</li>
+
+		{{/with}}
+	</ul>
+
+	{{/each}}
+	</li>
+
+	</ul>
+	{{/with}}
+</div>
+
+{{!--
+Цей код містить лише те, що буде виводитись в {{{body}}} в layout/default.hbs
+Адже наш layout/default.hbs має вже структуру HTML
+--}}
