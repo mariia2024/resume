@@ -1,0 +1,123 @@
+<div>
+  <div>
+    <h1>{{name}}</h1>
+  </div>
+
+
+  <p>Description: {{description}}</p>
+
+  {{#with history}}
+  <p>Founder: {{founder}}, {{year}}</p>
+  {{/with}}
+
+  <br>
+  <hr>
+
+  <h2>Types {{name}}:</h2>
+  <ul>
+    {{#each types}}
+    <li>{{this}}</li>
+    {{/each}}
+  </ul>
+
+  <br>
+  <hr>
+
+  <h2>Syntax {{name}}:</h2>
+  {{#with syntax}}
+  <ol>
+    <li>Var:</li>
+    <ul>
+      {{#each var}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+    <li>Functions:</li>
+    <ul>
+      {{#each functions}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+    <li>Conditionals:</li>
+    <ul>
+      {{#each conditionals}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+    <li>Loops:</li>
+    <ul>
+      {{#each loops}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+    <li>Classes:</li>
+    <ul>
+      {{#each classes}}
+      <li>
+        {{this}}
+      </li>
+      {{/each}}
+    </ul>
+
+  </ol>
+  {{/with}}
+
+  <br>
+  <hr>
+
+  <h2>Features {{name}}:</h2>
+  {{#each features}}
+  <ul>
+    <li>{{this}}</li>
+  </ul>
+  {{/each}}
+
+  <br>
+  <hr>
+
+  <h2>Libraries {{name}}:</h2>
+  {{#each libraries}}
+  <ul>
+    <li>{{this}}</li>
+  </ul>
+  {{/each}}
+
+  <br>
+  <hr>
+
+  <h2>Tools {{name}}:</h2>
+  <ul>
+    <li><button type="button" class="btn btn-babel">Babel</button></li>
+    <li><button type="button" class="text-bg-webpack">Webpack</button></li>
+    <li><button type="button" class="text-bg-eslint">ESLint</button></li>
+    <li><button type="button" class="btn btn-outline-gest">Jest</button></li>
+    <li><button type="button" class="btn btn-outline-mocha">Mocha</button></li>
+    <li><button type="button" class="btn btn-outline-chai">Chai</button></li>
+    <li><button type="button" class="btn btn-outline-selenium">Selenium</button></li>
+    <li><button type="button" class="btn btn-outline-cypress">Cypress</button></li>
+  </ul>
+
+  <br>
+  <hr>
+
+  <h2>Community {{name}}:</h2>
+  {{#each community}}
+  <ul>
+    <li>Name: {{name}}</li>
+    <li>Type: {{type}}</li>
+  </ul>
+  {{/each}}
+
+</div>
