@@ -909,6 +909,12 @@ router.get('/mac', function (req, res) {
         {
           type: 'HDMI',
           count: 1,
+          features: [
+            'Charging',
+            'DisplayPort',
+            'Thunderbolt (up to 40 Gbps)',
+            'USB 3.1 Gen 2 (up to 10 Gbps)',
+          ],
         },
       ],
       battery: {
