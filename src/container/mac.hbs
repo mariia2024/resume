@@ -1,0 +1,141 @@
+<div>
+	<div class="p-5">
+		<em>
+			<h1>Apple MacBook Pro</h1>
+			<button type="button" class="btn btn-primary">Купити</button>
+		</em>
+		<p>The ultimate notebook for power users</p>
+	</div>
+
+	<hr />
+	<ul>
+		<li><b>Price:</b> <button type="button" class="btn btn-primary"><b>1999.99</b></button></li>
+		<li><b>Category :</b> {{category}}</li>
+	</ul>
+	<ul>
+		{{#with features}}
+		<div><b>Features :</b></div>
+	</ul>
+
+	<ul>
+		{{#with processor}}
+		<li>Processor:
+			<ul>
+				<li>Brand: {{brand}}</li>
+				<li>Model: {{model}}</li>
+				<li>Speed: {{speed}}</li>
+				<li>Cores: {{cores}}</li>
+				<li>Cache: {{cache}}</li>
+			</ul>
+		</li>
+		{{/with}}
+	</ul>
+
+	<ul>
+		{{#with memory}}
+		<li>Memory:
+			<ul>
+				<li>Type: {{type}}</li>
+				<li>Size: {{size}}</li>
+				<li>Seed: {{speed}}</li>
+			</ul>
+		</li>
+		{{/with}}
+	</ul>
+
+	<ul>
+		{{#with storage}}
+		<li>Storage:
+			<ul>
+				<li>Type: {{type}}</li>
+				<li>Size: {{size}}</li>
+			</ul>
+		</li>
+		{{/with}}
+	</ul>
+
+	<ul>
+		{{#with display}}
+		<li>Display:
+			<ul>
+				<li>Size: {{size}}</li>
+				<li>Resolution: {{resolution}}</li>
+				<li>Technology: {{technology}}</li>
+				<li>Color_Space: {{color_space}}</li>
+				<li>Brightness: {{brightness}}</li>
+				<li>Refresh_Rate: {{refresh_rate}}</li>
+			</ul>
+		</li>
+		{{/with}}
+	</ul>
+
+	<ul>
+		{{#with graphics}}
+		<li> Graphics:
+			<ul>
+				<li>Brand: {{brand}}</li>
+				<li>Model: {{model}}</li>
+				<li>Memory: {{memory}}</li>
+			</ul>
+		</li>
+		{{/with}}
+	</ul>
+
+	<div>
+		{{#each ports}}
+		<li>Ports:
+			<ul>
+				<li>Type: {{type}}</li>
+				<li>Count: {{count}}</li>
+				<li>Features:
+
+					<ul>
+						{{#each features}}
+						<li>{{this}}</li>
+						{{/each}}
+					</ul>
+
+				</li>
+			</ul>
+		</li>
+		{{/each}}
+	</div>
+
+	{{#with battery}}
+	<li>Battery:
+		<ul>
+			<li>Type: {{type}}</li>
+			<li>Capacity: {{capacity}}</li>
+			<li>Life: {{life}}</li>
+		</ul>
+	</li>
+	{{/with}}
+	<br>
+
+	<li>Weight: {{weight}}</li>
+
+	<br>
+
+	{{#with dimensions}}
+	<li>Dimensions:
+		<ul>
+			<li>Height: {{height}}</li>
+			<li>Width: {{width}}</li>
+			<li>Depth: {{depth}}</li>
+		</ul>
+	</li>
+	{{/with}}
+
+	<b>Operating System: {{operating_system}}</b>
+
+	{{#each accessories}}
+	<li>Accessories:
+		<ul>
+			<li>Name: {{name}}</li>
+			<li>Price: {{price}}</li>
+		</ul>
+	</li>
+	{{/each}}
+
+	{{/with}}
+</div>
