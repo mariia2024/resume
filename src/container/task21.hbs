@@ -1,0 +1,80 @@
+<main>
+
+	<div class="card">
+		<div class="card-body">
+			<h1>JavaScript</h1>
+			<p>JavaScript is a popular high-level, dynamic, and interpreted programming language.</p>
+			<button class="btn btn-primary">Open page</button>
+			<button class="btn btn-outline-primary">Add to cart</button>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="card">
+		<div class="card-body">
+			<h2>Stack Overflow</h2>
+			<p>First-class functions</p>
+			<button type="button" class="btn btn-secondary">Open page</button>
+			<button type="button" class="btn btn-outline-secondary">Add to cart</button>
+		</div>
+	</div>
+
+	<br>
+
+	<div class="card">
+		<div class="card-body">
+			<h3>JavaScript Weekly</h3>
+			<p>Prototype-based inheritance newsletter</p>
+			<button type="button" class="btn btn-dark">{{heading.subblock.button_text.solid}}</button>
+			<button type="button" class="btn btn-outline-dark">{{heading.subblock.button_text.outline}}</button>
+		</div>
+	</div>
+
+	<br>
+
+
+	<div class="card">
+		<div class="card-body">
+			<div class="display-1 text-muted">HTML </div>
+
+			<div class="card">
+				<div class="card-body">
+					<div class="display-4">Outdated HTML tags</div>
+
+					<div class="card">
+						<div class="card-body">
+							<p class="text-capitalize">tags that have been identified as deprecated and not recommended for use in
+								HTML
+								version 5</p>
+							<button class="btn btn-outline-warning">Open </button>
+						</div>
+					</div>
+
+					<h3>{{nested_display.header_text}}</h3>
+					<button type="button" class="btn btn-info">{{nested_display.button.text}}</button>
+				</div>
+			</div>
+
+			<hr>
+
+
+			<div class="card">
+				<div class="card-body">
+					<h1>About modules</h1>
+					<p class="text-uppercase">Modules with import/export statements</p>
+					<button type="button" class="btn btn-primary">{{paragraph.button.text}}</button>
+
+					<div class="card">
+						<div class="card-body">
+							<ul>
+								{{#each paragraph.list_name}}
+								<li><a href="{{this.url}}">{{this.text}}</a></li>
+								{{/each}}
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+</main>
