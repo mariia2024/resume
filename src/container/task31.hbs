@@ -1,0 +1,309 @@
+<main>
+
+	<div class="text-center gy-5">
+
+		{{#with navigation}}
+		<nav class="row">
+
+			{{#each links}}
+			<a href="{{href}}" class="col-1 btn btn-link">{{text}}</a>
+			<div class="col-1"></div>
+			{{/each}}
+
+			{{#with button}}
+			<a href="{{href}}" class="col-2 btn btn-primary">{{text}}</a>
+			{{/with}}
+
+		</nav>
+		{{/with}}
+
+		<hr>
+
+		<div>
+			<section class="col-12">
+				<h1>Welcome to Our Website</h1>
+				<p>We offer innovative solutions to help grow your business. Our team of experts is committed to
+					providing tailored strategies that deliver the best results.</p>
+				<a href="https://www.youtube.com" class="btn btn-primary">Learn More</a>
+			</section>
+		</div>
+
+		<hr>
+
+		<div class="row mt-4">
+			<h2 class="text-start">City list</h2>
+			<section class="col-5">
+				<div>
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+						<div class="card-body">
+							<p class="display-4 text-start card-title"> New York City</p>
+							<p class="text-start">New York City comprises 5 boroughs sitting where the Hudson River
+								meets the
+								Atlantic Ocean. <br>At its core is Manhattan, a densely populated borough that’s among the world’s major
+								commercial, financial and cultural centers. Its iconic sites include skyscrapers such as the Empire
+								State
+								Building and sprawling Central Park.</p>
+							<a href="https://github.com/" class="badge bg-primary text-wrap" style="width: 8rem;">Read</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="col-5">
+				<div>
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+						<div class="card-body">
+							<p class="display-4 text-start card-title"> Paris</p>
+							<p class="text-start">Paris, France's capital, is a major European city and a global center for art,
+								fashion, gastronomy, and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the
+								River Seine.<br> Beyond such landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame
+								cathedral, the city is known for its cafe culture, haute couture fashion houses, and designer boutiques
+								along the Rue du Faubourg Saint-Honoré</p>
+							<a href="https://github.com/" class="badge bg-primary text-wrap" style="width: 8rem;">Read</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="col-5">
+				<div>
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+						<div class="card-body">
+							<p class="display-4 text-start card-title"> Tokyo</p>
+							<p class="text-start">Tokyo, Japan’s bustling capital, mixes the ultramodern and the traditional, from
+								neon-lit skyscrapers to historic temples. The opulent Meiji Shinto Shrine is known for its towering gate
+								and surrounding woods. The Imperial Palace sits amid large public gardens. <br>The city's many museums
+								offer exhibits ranging from classical art (in the Tokyo National Museum) to a reconstructed kabuki
+								theater (in the Edo-Tokyo Museum).</p>
+							<a href="https://github.com/" class="badge bg-primary text-wrap" style="width: 8rem;">Read</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section class="col-5">
+				<div>
+
+					<div class="card">
+						<img class="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+						<div class="card-body">
+							<p class="display-4 text-start card-title"> Sydney</p>
+							<p class="text-start">Sydney, capital of New South Wales and one of Australia's largest cities, is best
+								known for its harborfront Opera House, with a distinctive sail-like design. Massive Darling Harbour and
+								the smaller Circular Quay port are hubs of waterside life, with the arched Harbour Bridge and esteemed
+								Royal Botanic Garden nearby.<br> Sydney Tower’s outdoor platform, the Skywalk, offers 360-degree views
+								of the city and suburbs.</p>
+							<a href="https://github.com/" class="badge bg-primary text-wrap" style="width: 8rem;">Read</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div>
+
+		<hr>
+
+		<!--winner, table -->
+		<section class="col-9">
+			<table class="table table-striped table-bordered"><!--Це створення таблиць-->
+				<thead>
+					<tr>
+						<th>
+							#
+						</th>
+						<th>
+							name
+						</th>
+						<th>
+							surname
+						</th>
+						<th>
+							nickname
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>Ada</td>
+						<td>Lovelace</td>
+						<td>The Enchantress of Numbers</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Grace</td>
+						<td>Hopper</td>
+						<td>Amazing Grace</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Katherine</td>
+						<td>Johnson</td>
+						<td>The Human Computer</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<hr>
+
+		<!--gallery-->
+
+		<h2 class="text-start">Picture history</h2>
+
+		<section class="row gx-2">
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item active" aria-current="true">The Mona Lisa</li>
+					<li class="list-group-item">Painting</li>
+					<li class="list-group-item">Oil on poplar panel</li>
+					<li class="list-group-item">1503-1519</li>
+				</ul>
+			</div>
+
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item active" aria-current="true">The Persistence of Memory</li>
+					<li class="list-group-item">Painting</li>
+					<li class="list-group-item">Oil on canvas</li>
+					<li class="list-group-item">1931</li>
+				</ul>
+			</div>
+
+			<div class="col-4">
+				<ul class="list-group">
+					<li class="list-group-item active" aria-current="true">The Starry Night</li>
+					<li class="list-group-item">Painting</li>
+					<li class="list-group-item">Oil on poplar panel</li>
+					<li class="list-group-item">1889</li>
+				</ul>
+			</div>
+
+		</section>
+
+		<hr>
+
+		<!--relaxion-->
+
+		{{#with relaxion}}
+		<div class="display-3">{{title}}</div>
+
+		<section class="col-12">
+
+			<div class="row gx-2 gy-4">
+
+				{{#each cards}}
+				<div class="col-5">
+					<div class="card text-bg-secondary">
+						<div class="card-header">{{header}}</div>
+						<div class="card-body">
+							<h6 class="card-title">{{title}}</h6>
+							<p>{{description}}</p>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</section>
+		{{/with}}
+
+		<hr>
+
+		<!--rest-->
+
+
+		{{#with rest}}
+		<section class="col-12">
+
+			<div class="row g-2">
+
+				{{#each cards}}
+				<div class="col-6">
+					<div class="card">
+						<div class="card-header text-center">{{header}}</div>
+						<div class="card-body">
+							<h6 class="card-title text-center">{{title}}</h6>
+							<p class="text-center">{{description}}</p>
+							<button class="btn btn-primary">{{button}}</button>
+						</div>
+						<div class="card-footer text-center">{{footer}}</div>
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</section>
+		{{/with}}
+
+		<br>
+		<hr>
+		<!--proposition-->
+
+		{{#with proposition}}
+		<div class="display-2">{{title}}</div>
+
+		<section class="col-12">
+			<div class="row gx-2 gy-4">
+
+				{{#each card}}
+				<div class="col-5">
+					<div class="card  text-start text-bg-warning">
+						<div class="card-header">{{header}}</div>
+						<div class="card-body">
+							<h6 class="card-title">{{title}}</h6>
+							<p class="text-start">{{description}}</p>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+
+			</div>
+		</section>
+		{{/with}}
+
+		<br>
+		<hr>
+
+		<!--footer-->
+
+		<footer>
+			<div>
+				<h5 class="text-start">{{footer.title}}</h5>
+				<div class="row">
+					<div class="col">
+						<h6>Navigation</h6>
+						<ul>
+							{{#each footer.navigation}}
+							<li><a href="{{this.href}}">{{this.text}}</a></li>
+							{{/each}}
+						</ul>
+					</div>
+					<div class="col">
+						<h6>Social Media</h6>
+						<ul>
+							{{#each footer.socialMedia}}
+							<li><a href="{{this.link}}">{{this.name}}</a></li>
+							{{/each}}
+						</ul>
+					</div>
+					<div class="col">
+						<h6>Partners</h6>
+						<ul>
+							{{#each footer.partners}}
+							<li><a href="{{this.link}}">{{this.name}}</a></li>
+							{{/each}}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+</main>
