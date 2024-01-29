@@ -1,0 +1,575 @@
+<main> <!-- Это урок №2 bootstrap Текст,кнопки та блоки.-->
+
+	<h1 class="text-center text-uppercase">Hello world</h1>
+	<h2 class="text-end text-lowercase">Hello world</h2>
+	<h3 class="text-capitalize">Hello world one two</h3>
+
+	<hr>
+
+	<div class="display-1 text-muted">Hello world</div>
+	<div class="display-5">Hello world</div>
+	<div class="display-6">Hello world</div>
+
+	<hr>
+	<div class="text-muted text-end">
+		Додатковий текст<span class="display-6">Текст</span>
+	</div>
+	<!--<span class="text-muted">Додатковий текст</span> це сірий колір для тексту -->
+
+	<hr>
+
+	<button class="btn btn-success">
+		<span class="text-uppercase">button primary</span> <!--викор.для зміни регістру тексту-->
+	</button>
+
+	<!--<a href="#" class="btn btn-primary"> Це вже буде посілання
+        Button primary
+    </a>-->
+
+	<a href="#" class="btn btn-primary">
+		Button primary
+	</a>
+
+	<hr>
+
+	<p class="text-primary">My text</p>
+	<p class="text-secondary">My text</p>
+	<p class="text-muted">My text</p>
+	<p class="text-success">My text</p>
+	<p class="text-danger">My text</p>
+	<p class="text-warning">My text</p>
+	<p class="text-info">My text</p>
+	<p class="text-light">My text</p>
+	<p class="text-dark">My text</p>
+
+	<hr>
+
+	<button class="btn btn-outline-primary">My button</button>
+	<button class="btn btn-outline-success">My button</button>
+	<button class="btn btn-outline-secondary">Додати</button>
+	<button class="btn btn-outline-danger">Видалити</button>
+
+	<hr>
+	<div class="card">
+		<div class="card-body">
+			<button class="btn btn-outline-secondary btn-sm">Додати</button>
+			<button class="btn btn-outline-danger btn-lg">Видалити</button>
+		</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+	<div class="card">
+		<div class="card-body">
+			This is content
+		</div>
+	</div>
+</main>
+
+<br>
+<br>
+<hr>
+<!-- Это урок №3 bootstrap Карточки,таблиці та колонки.-->
+
+<!--Сервіс для генерації тестових картинок
+    https://picsum.photos/{WIDTH}/{HEIGHT}
+
+    https://picsum.photos/200/100 -->
+<main>
+	<div class="row gy-5">
+
+		<section class="col-12">
+			<div>
+				<div class="card text-bg-dark">
+					<img class="card-img-top" src="https://picsum.photos/400/200" alt="Product photo">
+					<div class="card-body">
+						<h5 class="card-title text-bg-primary"> Product Код: #313825891</h5>
+						<p class="text-bg-secondary">Умное кольцо <br>Jakcom R4 11 Size</p>
+						<a href="summary" class="btn btn-success">Buy</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="col-3">
+			<div class="card text-bg-info">
+
+				<div class="card-header">
+					<div class="display-6"> Menu</div>
+				</div>
+
+				<ul class="list-group">
+					<li class="list-group-item text-bg-success">
+						<a href="#" class="btn btn-link">Home page</a>
+					</li>
+					<li class="list-group-item text-bg-dark">
+						<a href="#" class="btn btn-link">Summary page</a>
+					</li>
+					<li class="list-group-item">
+						<a href="#" class="btn btn-link">Skills page</a>
+					</li>
+				</ul>
+		</section>
+
+		<section class="col-9">
+			<table class="table table-striped table-bordered text-bg-info"><!--Це створення таблиць-->
+				<thead>
+					<tr>
+						<th>
+							#id
+						</th>
+						<th>
+							name
+						</th>
+						<th>
+							age
+						</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<th>1</th>
+						<td>John</td>
+						<td>35</td>
+					</tr>
+					<tr>
+						<th>2</th>
+						<td>Ivan</td>
+						<td>25</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mariia</td>
+						<td>42</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mariia</td>
+						<td>42</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mariia</td>
+						<td>42</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mariia</td>
+						<td>42</td>
+					</tr>
+					<tr>
+						<th>3</th>
+						<td>Mariia</td>
+						<td>42</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+
+		<section class="col-12">
+			<div class="row gx-5 gy-3">
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+				<div class="col-4">
+					<div class="card text-bg-success">
+						<div class="card-header text-center">Header</div>
+						<div class="card-body text-center">
+							<h6 class="card-title">This is title</h6>
+							<p>This is content of our box</p>
+							<button class="btn btn-primary">Click</button>
+						</div>
+						<div class="card-footer text-center">Footer</div>
+					</div>
+				</div>
+
+		</section>
+	</div>
+
+
+
+	<br>
+	<br>
+	<br>
+
+	<ul class="list-group"> <!--вказує на клас для створення списку-->
+		<li class="list-group-item"> <!--вказує на клас для створення елемента списку-->
+			<ul class="list-group">
+				<li class="list-group-item">Item 2</li>
+				<li class="list-group-item">Item 3</li>
+			</ul>
+		</li>
+		<li class="list-group-item">Item 4</li>
+		<li class="list-group-item">Item 5</li>
+	</ul>
+
+	<br>
+	<br>
+	<hr>
+
+
+
+
+
+	<div class="card-footer">
+		<button class="btn btn-dark btn-sm">Update list</button>
+	</div>
+	</div>
+
+	<br>
+	<br>
+	<br>
+
+
+
+	<hr>
+
+	<div class="card text-bg-success">
+		<div class="card-header text-center">Header</div>
+		<div class="card-body text-center">
+			<h6 class="card-title">This is title</h6>
+			<p>This is content of our box</p>
+			<button class="btn btn-primary">Click</button>
+		</div>
+		<div class="card-footer text-center">Footer</div>
+	</div>
+
+
+	<br>
+	<br>
+	<br>
+
+	<div class="row gx-5 gy-3">
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+		<div class="col-4">
+			<div class="card text-bg-success">
+				<div class="card-header text-center">Header</div>
+				<div class="card-body text-center">
+					<h6 class="card-title">This is title</h6>
+					<p>This is content of our box</p>
+					<button class="btn btn-primary">Click</button>
+				</div>
+				<div class="card-footer text-center">Footer</div>
+			</div>
+		</div>
+
+	</div>
+
+</main>
+
+
+<hr>
+
+
+<!-- Навігація,значки та повідомлення. Урок 4-bootstrap-->
+
+<main class="p-5"> <!--Відступ на всьому экрані, в index.css відступи видалили-->
+	<div class="row">
+
+		<div class="col-12 mb-5">
+			<div class="nav nav-tabs">
+				<div class="nav-item">
+					<a href="#" class="nav-link active">Main</a>
+				</div>
+				<div class="nav-item">
+					<a href="#" class="nav-link disabled">Catalog</a>
+				</div>
+				<div class="nav-item">
+					<a href="#" class="nav-link ">Shop list</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-5 pe-5">
+			<div class="card">
+				<div class="pt-4 pb-3 px-4">
+					<div class="nav flex-column">
+
+						<div class="nav-item mb-2">
+							<div class="card">
+								<a href="/summary" class="nav-link">Home page</a>
+							</div>
+						</div>
+						<div class="nav-item mb-2">
+							<div class="card">
+								<a href="#" class="nav-link active">Bootstrap</a>
+							</div>
+						</div>
+						<div class="nav-item mb-2">
+							<div class="card">
+								<a href="#" class="nav-link disabled">FAQ page</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-7">
+			<div class="row">
+				<div class="col-12">
+					<ol class="breadcrumb">
+						<li class="breadcrumb-item">
+							<a href="" #>Home</a>
+						</li>
+						<li class="breadcrumb-item">
+							<a href="" #>Рс та Ноутбук</a>
+						</li>
+						<li class="breadcrumb-item">
+							MacBook
+						</li>
+					</ol>
+				</div>
+
+				<div class="col-12">
+					<h6>
+						Hello world! <span class="badge text-bg-warning rounded-pill text-uppercase">Топ продаж</span>
+					</h6>
+					<button class="btn btn-primary rounded-pill">Click me</button>
+
+					<div class="alert alert-primary">This is important info!</div>
+
+					<!--або може бути така карточка-->
+					<div class="col-12">
+						<div class="alert alert-dark">
+							<h6>
+								Hello world!
+								<span class="badge text-bg-warning rounded-pill text-uppercase">Топ продаж</span>
+							</h6>
+							<button class="btn btn-primary rounded-pill">Click me</button>
+							This is important info!
+						</div>
+					</div>
+
+
+					<!--або може бути така карточка-->
+					<div class="col-12"></div>
+					<div class="alert alert-dark">
+						<h6>
+							Hello world!
+							<span class="badge text-bg-warning rounded-pill text-uppercase">Топ продаж</span>
+						</h6>
+						This is important info!
+					</div>
+					<button class="btn btn-primary rounded-pill">Click me</button>
+				</div>
+			</div>
+
+			<!--або може бути така карточка-->
+			<hr>
+			<div class="col-12">
+				<button class="btn btn-primary rounded-pill mb-3">Click me</button>
+				<div class="alert alert-dark">
+					<h6 class="mb-2">
+						Hello world!
+						<span class="badge text-bg-warning rounded-pill text-uppercase">Топ продаж</span>
+					</h6>
+					<p class="m-0"> This is important info!</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	</div>
+	</div>
+</main>
+
+<!-- Компоненти форми. Урок 5-bootstrap-->
+
+<main class="p-5">
+	<div class="row g-5">
+		<div class="col-12">
+			<label class="form-label">Email address</label>
+			<input class="form-control">
+			<div class="form-text text-danger">Error.You need to set correct email.</div>
+		</div>
+		<div class="col-12">
+
+			<div class="row">
+				<div class="col-2 pt-1">
+					<label class="form-label">Email address</label>
+				</div>
+				<div class="col-6">
+					<input class="form-control form-control-sm">
+				</div>
+				<div class="col-4 ps-5 pt-1">
+					<div class="form-text text-danger">Error.You need to set correct email.</div>
+				</div>
+			</div>
+		</div>
+
+		<div>
+			<hr>
+		</div>
+
+		<div class="col-12">
+			<label class="form-label">Select role</label>
+			<select class="form-select form-select-lg">
+				<option selected>Open list</option>
+				<option value="1">Admin</option>
+				<option value="2">User</option>
+			</select>
+			<div class="form-text text-danger">Error.You need to set correct email.</div>
+		</div>
+
+		<div>
+			<hr>
+		</div>
+
+		<div class="col-12">
+			<div class="form-label">Select food</div>
+			<div class="form-check">
+				<label class="form-check-label">Apple</label>
+				<input name="food" type="checkbox" class="form-check-input">
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">Oragne</label>
+				<input name="food" type="radio" class="form-check-input">
+			</div>
+			<div class="form-check">
+				<label class="form-check-label">Banana</label>
+				<input name="food" type="radio" class="form-check-input">
+			</div>
+		</div>
+
+		<hr>
+
+		<div class="col-12">
+			<div class="form-label">Get bonus</div>
+		</div>
+		<div class="form-check form-switch">
+			<label class="form-check-label">Yes</label>
+			<input name="food" type="checkbox" class="form-check-input">
+		</div>
+		<div class="form-check form-switch">
+			<label class="form-check-label">No</label>
+			<input name="food" type="checkbox" class="form-check-input">
+		</div>
+	</div>
+
+	<hr>
+	<hr>
+
+
+	<div class="col-12">
+		<div class="form-check form-switch">
+			<label class="form-check-label">Get bonus</label>
+			<input name="food" type="checkbox" class="form-check-input">
+		</div>
+
+	</div>
+</main>

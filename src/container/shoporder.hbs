@@ -1,0 +1,384 @@
+<main class="p-5">
+	{{!-- navigation --}}
+	{{#with navigation}}
+	<div class="card mb-3">
+		<div class="nav">
+			{{#each links}}
+			<div class="nav-item">
+				<a href="{{href}}" class="nav-link {{#if @last}}Exit{{/if}}">{{text}}</a>
+			</div>
+			{{/each}}
+		</div>
+	</div>
+	{{/with}}
+
+	{{!-- header: 'Оформлення замовлення'--}}
+
+	<h1 class="my-5">{{header}}</h1>
+
+	<div class="row">
+		<div class="col-8">
+			{{#with contacts_data}}
+			<div class="row my-3">
+				<h2 class="col-12">{{title}}</h2>
+
+				{{#each buttons}}
+				<div class="col-4 pe-0">
+					<button
+						class="btn {{#if isPrimary}}btn-warning{{/if}} {{#if isOutline}}btn-outline-warning{{/if}}">{{text}}</button>
+				</div>
+				{{/each}}
+
+				{{#with form}}
+				{{#with input}}
+				{{#with surname}}
+				<div class="col-6 mt-3">
+					<label class="form-label mb-0">{{label}}</label>
+					<input placeholder="{{placeholder}}" class="form-control">
+					<div class="form-text">{{caption}}</div>
+				</div>
+				{{/with}}
+
+				{{#with name}}
+				<div class="col-6 mt-3">
+					<label class="form-label mb-0">{{label}}</label>
+					<input placeholder="{{placeholder}}" class="form-control">
+					<div class="form-text">{{caption}}</div>
+				</div>
+				{{/with}}
+
+				{{#with phone}}
+				<div class="col-6 mt-3">
+					<label class="form-label mb-0">{{label}}</label>
+					<input placeholder="{{placeholder}}" class="form-control">
+					<div class="form-text">{{caption}}</div>
+				</div>
+				{{/with}}
+
+				{{#with email}}
+				<div class="col-6 mt-3">
+					<label class="form-label mb-0">{{label}}</label>
+					<input placeholder="{{placeholder}}" class="form-control">
+					<div class="form-text">{{caption}}</div>
+				</div>
+				{{/with}}
+				{{/with}}
+
+				<div class="col-12 my-3">
+					<hr>
+				</div>
+
+				{{#each switch}}
+				<div class="col-12 my-2 mt-0">
+					<div class="form-check form-switch">
+						<label class="form-check-label">{{text}}</label>
+						<input name="food" type="checkbox" class="form-check-input" {{#if isActive}}checked{{/if}}>
+					</div>
+				</div>
+				{{/each}}
+
+				{{/with}}
+
+				<div class="col-12 my-2">
+					<hr>
+				</div>
+
+				{{#with ../delivery}}
+				<div>
+					<h2 class="col-12">{{title}}</h2>
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+						<div class="row">
+							{{#each select}}
+							<div class="col-6">
+								<label class="form-label mb-0">{{label}}</label>
+								<select class=" form-select">
+									<option selected>{{placeholder}}</option>
+									{{#each options}}
+									<option value="{{value}}">{{text}}</optio>
+										{{/each}}
+								</select>
+							</div>
+							{{/each}}
+						</div>
+					</div>
+				</div>
+
+				{{#each delivery_type}}
+				<div class="col-12 mt-3">
+					<div class="form-check">
+						<label class="form-check-label">{{type}}</label>
+						<input name="delivery" type="radio" class="form-check-input">
+					</div>
+				</div>
+				{{/each}}
+
+				<div class="col-12 my-2">
+					<hr>
+				</div>
+
+				{{#with payment}}
+				<div>
+					<h2 class="col-12">{{title}}</h2>
+				</div>
+				{{#each list}}
+				<div class="col-12 mt-3">
+					<div class="form-check">
+						<label class="form-check-label">{{type}}</label>
+						<input name="payment" type="radio" class="form-check-input">
+					</div>
+					<div class="form-text">{{description}}</div>
+				</div>
+				{{/each}}
+				{{/with}}
+
+				<div class="col-12 my-2">
+					<hr>
+				</div>
+
+				{{#with contact}}
+				<div>
+					<h2 class="col-12">{{title}}</h2>
+				</div>
+
+
+				<div class="row my-3">
+					{{#with surname}}
+					<div class="col-6">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+
+					{{#with name}}
+					<div class="col-6">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+
+					{{#with phone}}
+					<div class="col-6 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+
+					{{#with email}}
+					<div class="col-6 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+
+					{{/with}}
+
+					<div class="col-12 my-2">
+						<hr>
+					</div>
+
+					{{#with coment}}
+					<div class="col-12 mt-1">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control">
+					</div>
+					{{/with}}
+
+					{{/with}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+					{{#with ../coupon}}
+					<div>
+						<h2 class="col-12">{{title}}</h2>
+					</div>
+
+					{{#with select}}
+					{{#with availabel_coupon}}
+					<div class="col-12 mt-2">
+						<label class="form-label mb-0">{{label}}</label>
+						<select class="form-select form-select-lg">
+							<option selected>{{placeholder}}</option>
+							{{#each options}}
+							<option value="{{value}}">{{text}}</option>
+							{{/each}}
+						</select>
+					</div>
+					{{/with}}
+
+					{{#with friend_coupon}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<select class="form-select form-select-sm">
+							<option selected>{{placeholder}}</option>
+							{{#each options}}
+							<option value="{{value}}">{{text}}</option>
+							{{/each}}
+						</select>
+					</div>
+					{{/with}}
+					{{/with}}
+
+					{{#with add}}
+					{{#with friend}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control form-control-lg">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+
+					{{#with colleague}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<input placeholder="{{placeholder}}" class="form-control form-control-sm">
+						<div class="form-text">{{caption}}</div>
+					</div>
+					{{/with}}
+					{{/with}}
+					{{/with}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+					{{#with ../quiz}}
+					<div>
+						<h2 class="col-12">{{title}}</h2>
+					</div>
+
+					{{#with preference}}
+					<div class="col-12 mt-3">
+						<div class="form-check-label">{{title}}</div>
+						{{#each options}}
+						<div class="form-check">
+							<label class="form-check-label">{{this}}</label>
+							<input name="ownershipType" type="radio" class="form-check-input">
+						</div>
+						{{/each}}
+					</div>
+					{{/with}}
+
+					{{#with your_expirience}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<input class="form-control">
+					</div>
+					{{/with}}
+
+					{{#with purchase_frequency}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{label}}</label>
+						<select class="form-select">
+							<option selected>{{placeholder}}</option>
+							{{#each options}}
+							<option value="{{value}}">{{text}}</option>
+							{{/each}}
+						</select>
+					</div>
+					{{/with}}
+
+					{{#with factors}}
+					<div class="col-12 mt-3">
+						<label class="form-label mb-0">{{title}}</label>
+						{{#each options}}
+						<div class="form-check">
+							<label class="form-check-label">{{this}}</label>
+							<input name="food" type="checkbox" class="form-check-input">
+						</div>
+						{{/each}}
+					</div>
+					{{/with}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+				</div>
+				{{/with}}
+			</div>
+			{{/with}}
+
+		</div>
+
+		{{!-- Боковое меню --}}
+		<div class="col-4">
+			<div class="card p-1">
+				{{#each action_block}}
+				<div class="m-1">
+					<button
+						class="btn {{#if isSuccess}}btn-success{{/if}}{{#if isDanger}}btn-danger{{/if}}{{#if isInfo}}btn-info{{/if}}">{{text}}
+					</button>
+				</div>
+				{{/each}}
+			</div>
+
+			{{#with total}}
+			<div class="card mt-3">
+				<div class="card-body">
+
+					<div>
+						<h2 class="col-12">{{title}}</h2>
+					</div>
+
+					{{#each item_list}}
+					<div>{{name}}: {{price}}</div>
+					{{/each}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+					{{#each additional_info}}
+					<div>{{text}}: {{value}}</div>
+					{{/each}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+					{{#with total_price}}
+					<div>{{text}}: {{value}}</div>
+					{{/with}}
+
+					<div class="col-12 my-3">
+						<hr>
+					</div>
+
+					{{#each button}}
+					<div class="my-3">
+						<button
+							class="btn {{#if isPrimary}}btn-primary{{/if}}{{#if isOutline}}btn-outline-primary{{/if}}">{{text}}
+						</button>
+					</div>
+					{{/each}}
+
+				</div>
+			</div>
+			{{/with}}
+		</div>
+
+		{{!-- Footer --}}
+		<div class="col-10">
+			<div class="row">
+				{{#each footer}}
+				<div class="col-2">
+					{{#each this}}
+					<div>
+						<a href="{{link}}" class=" nav nav-link {{#if @last}}disabled{{/if}}">{{text}}</a>
+					</div>
+					{{/each}}
+				</div>
+				{{/each}}
+			</div>
+		</div>
+
+</main>
